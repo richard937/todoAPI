@@ -10,6 +10,12 @@ It supports following features:
 
 
 ## Routes:
+1. Send a GET request to `localhost:3000/todos` to see all the todos.
+2. Send a POST request to `localhost:3000/todos` to CREATE a todo.
+3. Send a GET request to `localhost:3000/todos/id/:id` to READ a todo by the ID.
+4. Send a PUT request to `localhost:3000/todos/id/:id` to UPDATE a todo (description and priority).
+5. Send a PUT request to `localhost:3000/todos/:title/complete` to UPDATE a todo to mark complete by the Title.
+6. Send a DELETE request to `localhost:3000/todos/id/:id` to DELETE a todo by the ID.
 
 
 ## DataBase Schema:
