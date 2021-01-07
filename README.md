@@ -9,13 +9,22 @@ It supports following features:
 3. The user can prioritize the todos
 
 
-## Routes:
+## CRUD Routes:
 1. Send a GET request to `localhost:3000/todos` to see all the todos.
 2. Send a POST request to `localhost:3000/todos` to CREATE a todo.
 3. Send a GET request to `localhost:3000/todos/id/:id` to READ a todo by the ID.
 4. Send a PUT request to `localhost:3000/todos/id/:id` to UPDATE a todo (description and priority).
 5. Send a PUT request to `localhost:3000/todos/:title/complete` to UPDATE a todo to mark complete by the Title.
 6. Send a DELETE request to `localhost:3000/todos/id/:id` to DELETE a todo by the ID.
+
+## Search Routes:
+1. Send a GET request to `localhost:3000/todos/:title` to Search by Title.
+2. Send a GET request to `localhost:3000/todos/priority/:priority` to Search by priority.
+3. Send a GET request to `localhost:3000/todos/top/priority` to find the top priority todo.
+4. Send a GET request to `localhost:3000/todos/search/date` to Search by Date.
+5. Send a GET request to `localhost:3000/todos/search/incomplete` to Search all Incomplete todos.
+6. Send a GET request to `localhost:3000/todos/search/complete` to Search all Complete todos.
+
 
 
 ## DataBase Schema:
@@ -52,3 +61,5 @@ todo {
 5. Hit `node server.js` to run. 
 6. Comment line no 42 in `todoItem.js`. 
 7. The app will run on `localhost:3000/`
+
+**I took reference from this article for PostgreSQL: [Link](https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize)
